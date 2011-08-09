@@ -456,7 +456,7 @@ function! s:BEMapKeys()
   nnoremap <buffer> <silent> T             :call <SID>BEToggleShowTabBuffer()<cr>
   nnoremap <buffer> <silent> B             :call <SID>BEToggleOnlyOneTab()<cr>
 
-  for k in ["G", "n", "N", "L", "M", "H"]
+  for k in ["G", "L", "M", "H"]
     exec "nnoremap <buffer> <silent>" k ":keepjumps normal!" k."<cr>"
   endfor
 endfunction
